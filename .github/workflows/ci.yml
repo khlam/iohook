@@ -25,6 +25,7 @@ jobs:
         with:
           registry-url: 'https://npm.pkg.github.com'
           node-version: ^14.17.5
+          scope: '@octocat'
 
       - name: Add msbuild to PATH
         uses: microsoft/setup-msbuild@v1.1
