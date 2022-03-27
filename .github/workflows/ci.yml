@@ -42,10 +42,10 @@ jobs:
 
       - name: Publish NPM Package
       - uses: actions/setup-node@v1
-          with:
-            registry-url: 'https://npm.pkg.github.com'
-            node-version: ^14.17.5
-            scope: '@octocat'
+        with:
+          registry-url: 'https://npm.pkg.github.com'
+          node-version: ^14.17.5
+          scope: '@octocat'
         run: | 
           echo "registry=https://npm.pkg.github.com/@khlam" >> .npmrc
           npm publish
