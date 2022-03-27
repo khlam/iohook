@@ -41,7 +41,8 @@ jobs:
           GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish NPM Package
-        run: echo "registry=https://npm.pkg.github.com/@khlam" >> .npmrc
-        run: npm publish
+        run: | 
+          echo "registry=https://npm.pkg.github.com/@khlam" >> .npmrc
+          npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
