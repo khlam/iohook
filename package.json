@@ -16,7 +16,7 @@
   "types": "index.d.ts",
   "scripts": {
     "install": "node install.js",
-    "build": "node build.js --upload=false",
+    "build": "node build.js --upload=false --abi 89",
     "build:ci": "node build.js --all",
     "build:print": "node -e 'require(\"./helpers\").printManualBuildParams()'",
     "test": "jest",
