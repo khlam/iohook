@@ -17,7 +17,7 @@
   "scripts": {
     "install": "node install.js",
     "build": "node build.js --upload=false",
-    "build:dev": "node build.js --runtime electron --version 13.6.6 build.js --abi 89",
+    "build:dev": "node build.js --runtime electron --version 13.6.6 --abi 93",
     "build:ci": "node build.js --all",
     "build:print": "node -e 'require(\"./helpers\").printManualBuildParams()'",
     "test": "jest",
@@ -92,6 +92,51 @@
   "supportedTargets": [
     [
       "electron",
+      "4.0.4",
+      "69"
+    ],
+    [
+      "electron",
+      "5.0.0",
+      "70"
+    ],
+    [
+      "electron",
+      "6.0.0",
+      "73"
+    ],
+    [
+      "electron",
+      "7.0.0",
+      "75"
+    ],
+    [
+      "electron",
+      "8.0.0",
+      "76"
+    ],
+    [
+      "electron",
+      "9.0.0",
+      "80"
+    ],
+    [
+      "electron",
+      "10.0.0",
+      "82"
+    ],
+    [
+      "electron",
+      "11.0.0",
+      "85"
+    ],
+    [
+      "electron",
+      "12.0.0",
+      "87"
+    ],
+    [
+      "electron",
       "13.0.0",
       "89"
     ],
@@ -99,6 +144,36 @@
       "electron",
       "14.0.0",
       "89"
+    ],
+    [
+      "node",
+      "10.0.0",
+      "64"
+    ],
+    [
+      "node",
+      "11.4.0",
+      "67"
+    ],
+    [
+      "node",
+      "12.0.0",
+      "72"
+    ],
+    [
+      "node",
+      "13.0.0",
+      "79"
+    ],
+    [
+      "node",
+      "14.0.0",
+      "83"
+    ],
+    [
+      "node",
+      "15.0.0",
+      "88"
     ],
     [
       "node",
