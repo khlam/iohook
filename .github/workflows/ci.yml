@@ -11,7 +11,7 @@ jobs:
   ci:
     strategy:
       matrix:
-        os: [windows-latest]
+        os: [windows-2019]
         arch: [x86_64]
 
     runs-on: ${{ matrix.os }}
@@ -24,8 +24,11 @@ jobs:
         uses: actions/setup-node@v2
         with:
           registry-url: 'https://npm.pkg.github.com'
-          node-version: 14
+          node-version: ^14.17.5
 
+      - name: Add msbuild to PATH
+        uses: microsoft/setup-msbuild@v1.1
+      
       - name: Install node-gyp
         run: npm install -g node-gyp@latest 
 
