@@ -42,7 +42,7 @@ jobs:
 
       - name: Publish Package
         run: | 
-          echo "registry=https://npm.pkg.github.com/@khlam" >> .npmrc
+          echo "registry=https://npm.pkg.github.com/" >> .npmrc
           npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
