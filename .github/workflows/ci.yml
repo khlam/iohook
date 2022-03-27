@@ -25,8 +25,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
-          # Set registry to NPM instead of github packages for publication
-          registry-url: 'https://registry.npmjs.org'
+          registry-url: 'https://npm.pkg.github.com'
           node-version: 14
 
       - name: Setup Linux Dependencies
