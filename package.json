@@ -17,6 +17,7 @@
   "scripts": {
     "install": "node install.js",
     "build": "node build.js --upload=false",
+    "build:dev":"node build.js --runtime electron --version 16.1.0 --abi 99",
     "build:ci": "node build.js --all",
     "build:print": "node -e 'require(\"./helpers\").printManualBuildParams()'",
     "test": "jest",
